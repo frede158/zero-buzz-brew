@@ -6,3 +6,7 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+  document.getElementById("myImage").addEventListener("click", function() {
+    window.location.href = "index.html";
+});

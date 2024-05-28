@@ -9,17 +9,26 @@
    --backgr: #000;
  }
 
+body {
+  font-family: 'Poppins';
+}
+
 /* Use your variables on elements */
  main {
    color: var(--contrast);
-   background-color: var(--backgr);
  }
 /* Add a black background color to the top navigation */
+
+.background-video {
+border-radius: 20px 20px 40px 40px;
+  width: 100%;
+}
 
 
 .nav-logo {
   float: left;
   width: 8%;
+  margin: 0 7%
 }
 
 .topnav {
@@ -28,15 +37,15 @@
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  display: block;
+  float: none;
+  display: inline-block; /* Ændret til inline-block for at kunne tilføje margin */
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px;
   text-decoration: none;
   font-size: 17px;
+  margin: 0 5%;
 }
-
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -47,6 +56,7 @@
 .dropdown {
   float: left;
   overflow: hidden;
+  margin: 0 5%;
 }
 
 /* Style the dropdown button to fit inside the topnav */
@@ -59,6 +69,7 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  
 }
 
 /* Style the dropdown content (hidden by default) */
@@ -139,9 +150,9 @@
   .topnav {
     overflow: hidden;
     display: flex; /* Brug Flexbox til layout */
-    justify-content: space-between; /* Placer elementer med lige mellemrum */
-  padding-left: 100px;
-  padding-right: 100px;
+    align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
   }
 }
 @media screen and (max-width: 600px) {
