@@ -24,6 +24,14 @@ border-radius: 20px 20px 40px 40px;
   width: 100%;
 }
 
+.overlay-video {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 7%; 
+  color: #000000;
+}
+
 
 .nav-logo {
   float: left;
@@ -160,4 +168,79 @@ border-radius: 20px 20px 40px 40px;
     float: left;
     width: 8%;
   }
+}
+.whole {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.product-card {
+  width: 400px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.product-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+    transition: 0.4s;
+  }
+
+.produkt-knap {
+  background-color: #13135d;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  width: 350px;
+  font-size: large;
+}
+.produkt-knap:hover {
+  background-color: black;
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 600px) {
+  .whole {
+    display: flex;
+    flex-direction: column;
+    gap: 7em;
+  }
+}
+@media screen and (max-width: 820px) {
+  .product-card, .produkt-knap {
+    width: 90%;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background-video {
+    border-radius: 10px;
+  }
+}
+
+.footer {
+  color: #000000;
+  text-align: center;
+  padding: 5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-left: -5px;
 }
