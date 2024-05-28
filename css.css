@@ -24,11 +24,19 @@ border-radius: 20px 20px 40px 40px;
   width: 100%;
 }
 
-.overlay-video {
+.front-tekst {
   display: flex;
   flex-direction: column; 
   align-items: center; 
   padding: 7%; 
+  color: #000000;
+}
+
+.front-tekst-2 {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 2%; 
   color: #000000;
 }
 
@@ -186,7 +194,6 @@ border-radius: 20px 20px 40px 40px;
 .product-img {
   width: 100%;
   object-fit: cover;
-  border-radius: 5px;
   margin-bottom: 10px;
 }
 
@@ -235,6 +242,47 @@ border-radius: 20px 20px 40px 40px;
   }
 }
 
+.artikel-whole {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+.artikel-kort {
+  width: 300px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 20px;
+  color: #000000;
+}
+
+.artikel-kort:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.artikel-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.artikel-knap {
+  background-color: #13135d;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  width: 300px;
+  font-size: medium;
+}
+
+.artikel-knap:hover {
+ background-color: #000000;
+ transform: scale(1.05);
+ transition: 0.4s;
+}
+
 .footer {
   color: #000000;
   text-align: center;
@@ -243,4 +291,25 @@ border-radius: 20px 20px 40px 40px;
   bottom: 0;
   width: 100%;
   margin-left: -5px;
+}
+
+@media screen and (max-width: 600px) {
+  .artikel-whole {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .artikel-kort, .artikel-knap {
+    width: auto;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .artikel-img {
+   display: none;
+  }
 }
