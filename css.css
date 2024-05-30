@@ -11,6 +11,7 @@
 
 body {
   font-family: 'Poppins';
+  background-color: #FDFEF6;
 }
 
 /* Use your variables on elements */
@@ -20,7 +21,7 @@ body {
 /* Add a black background color to the top navigation */
 
 .background-video {
-border-radius: 20px 20px 40px 40px;
+border-radius: 40px 40px 40px 40px;
   width: 100%;
 }
 
@@ -29,7 +30,7 @@ border-radius: 20px 20px 40px 40px;
   flex-direction: column; 
   align-items: center; 
   padding: 7%; 
-  color: #000000;
+  color: #111552;
 }
 
 .front-tekst-2 {
@@ -37,7 +38,24 @@ border-radius: 20px 20px 40px 40px;
   flex-direction: column; 
   align-items: center; 
   padding: 2%; 
-  color: #000000;
+  color: #111552;
+}
+
+.front-tekst-3 {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 7%; 
+  color: #111552;
+}
+
+.front-tekst-sider {
+  display: flex;
+  flex-direction: column; 
+  font-size: large;
+  align-items: center; 
+  padding: 5%; 
+  color: #111552;
 }
 
 
@@ -55,7 +73,7 @@ border-radius: 20px 20px 40px 40px;
 .topnav a {
   float: none;
   display: inline-block; /* Ændret til inline-block for at kunne tilføje margin */
-  color: #000000;
+  color: #111552;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
@@ -80,7 +98,7 @@ border-radius: 20px 20px 40px 40px;
   font-size: 17px; 
   border: none;
   outline: none;
-  color: rgb(0, 0, 0);
+  color: #111552;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -101,7 +119,7 @@ border-radius: 20px 20px 40px 40px;
 /* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: black;
+  color: #111552;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -110,8 +128,10 @@ border-radius: 20px 20px 40px 40px;
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+  background-color: #6189A0;
+  color: #fdfef6;
+  border-radius: 10px;
+  transition: 0.4s;
 }
 
 /* Add a grey background to dropdown links on hover */
@@ -188,7 +208,7 @@ border-radius: 20px 20px 40px 40px;
   border-radius: 20px;
   padding: 20px;
   text-align: center;
-  color: #000000;
+  color: #111552;
 }
 
 .product-img {
@@ -208,8 +228,8 @@ border-radius: 20px 20px 40px 40px;
   }
 
 .produkt-knap {
-  background-color: #13135d;
-  color: white;
+  background-color: #111552;
+  color: #fdfef6;
   padding: 20px;
   border: none;
   border-radius: 20px;
@@ -217,7 +237,7 @@ border-radius: 20px 20px 40px 40px;
   font-size: large;
 }
 .produkt-knap:hover {
-  background-color: black;
+  background-color: #1a3850;
   transform: scale(1.05);
   transition: 0.4s;
 }
@@ -268,8 +288,8 @@ border-radius: 20px 20px 40px 40px;
 }
 
 .artikel-knap {
-  background-color: #13135d;
-  color: white;
+  background-color: #111552;
+  color: #fdfef6;
   padding: 20px;
   border: none;
   border-radius: 20px;
@@ -278,7 +298,7 @@ border-radius: 20px 20px 40px 40px;
 }
 
 .artikel-knap:hover {
- background-color: #000000;
+ background-color: #1a3850;
  transform: scale(1.05);
  transition: 0.4s;
 }
@@ -311,5 +331,57 @@ border-radius: 20px 20px 40px 40px;
 @media screen and (max-width: 600px) {
   .artikel-img {
    display: none;
+  }
+}
+
+.over-image-text {
+  display: flex;
+  align-items: center;
+  color: #111552;
+}
+#billede-forside {
+  width: 50%;
+  margin: 5%;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0px 2px 5px 0px rgb(26, 25, 25);
+}
+.tekst-forside {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  max-width: 600px;
+  color: #111552;
+  line-height: 1.5;
+  padding: 7%;
+}
+#knap-tekst {
+  color: #ddd;
+  text-decoration: none;
+  padding: 14px 16px;
+  background-color: #201313;
+  max-width: 150px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px 0px rgb(26, 25, 25);
+}
+#knap-tekst:hover {
+  background-color: #ced5d4;
+  transition: 0.4s;
+  color: black;
+}
+
+.hvorfor-video {
+  width: 50%;
+  margin: 5%;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0px 2px 5px 0px rgb(26, 25, 25);
+}
+
+@media screen and (max-width: 600px) {
+  .whole-artikel, .tekst-forside  {
+    display: flex;
+    font-size: 80%;
+    flex-direction: column;
+    align-items: center;
   }
 }
