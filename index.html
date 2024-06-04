@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="da">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +8,8 @@
     <link rel="stylesheet" href="css.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-
 <body>
+    <!-- navigationsmenu -->
     <section class="topnav" id="myTopnav">
         <img id="myImage" src="images/zero-buzz-brew-logo.png" alt="logo" class="nav-logo">
         <a href="produkter.html">PRODUKTER</a>
@@ -20,7 +19,7 @@
             <button class="dropbtn">OM OS
             </button>
             <section class="dropdown-content">
-                <a href="historie.html">HISTORIE</a>
+                <a href="#">HISTORIE</a>
                 <a href="#">FORHANDLERE</a>
                 <a href="#">BETINGELSER</a>
             </section>
@@ -28,13 +27,16 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </section>
     <main>
+        <!-- Forside video -->
         <video class="background-video" autoplay loop muted>
             <source src="images/forside-video-buzz.mp4" type="video/mp4">
         </video>
+        <!-- tekst imellem video og produkt kort -->
         <section class="front-tekst">
             <h3>Sammenhold er vigtigere end alkohol.</h3>
             <p id="mellem-tekst">Dette er vores mission. At give et godt alternativ til den almene øl. Uden alkohol kan du nyde en smagfuld ølsmag uden bekymring. For sundhed, fælleskab og alt det praktiske.</p>
         </section>
+        <!-- Produkt kort i en samlet "whole" section -->
         <section class="whole">
             <section class="product-card">
                 <h3>DEN HURTIGE</h3>
@@ -55,11 +57,11 @@
                 <button class="produkt-knap">Bestil</button>
             </section>
         </section>
-
+        <!-- Tekst mellem produkt kort og artikler -->
         <section class="front-tekst-2">
             <h3>LÆS VORES SPÆNDENDE ARTIKLER</h3>
         </section>
-
+        <!-- Artikel kort og en overordnet "artikel-whole" section -->
         <section class="artikel-whole">
             <section class="artikel-kort">
                 <img class="artikel-img" src="images/brew-beer-artikel.webp" alt="Gæring af zero buzz.">
@@ -84,6 +86,7 @@
     <section class="footer">
         <p>&copy; 2023 Zero Buzz Brew. Alle Rettigheder Forbeholdes.</p>
     </section>
+    <!-- link til js fil med al javascipt -->
     <script src="js/js.js"></script>
 </body>
 

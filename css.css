@@ -1,32 +1,24 @@
-:root {
-  --contrast: lime;
-  --backgr: #000;
-}
-
+/* Teksttype og baggrundsfarve for hele hjemmesiden */
 body {
   font-family: 'Poppins';
   background-color: #FDFEF6;
 }
 
-main {
-  color: var(--contrast);
-}
-
-
-
+/* Runde hjørner og størrelse på forside video */
 .background-video {
   border-radius: 40px 40px 40px 40px;
   width: 100%;
 }
 
-.front-tekst {
+/* forside tekst, til "Zero Buzz Brew - Et Sundere valg */
+.front-tekst, .front-tekst-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 7%;
   color: #111552;
 }
-
+/* centrering af forside tekst under elementer på forsiden */
 .front-tekst-2 {
   display: flex;
   flex-direction: column;
@@ -35,14 +27,7 @@ main {
   color: #111552;
 }
 
-.front-tekst-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 7%;
-  color: #111552;
-}
-
+/* Brugt til centrering af overskrift på siderne. F.eks. "produkter" og "fremstilling" */
 .front-tekst-sider {
   display: flex;
   flex-direction: column;
@@ -51,8 +36,7 @@ main {
   padding: 5%;
   color: #111552;
 }
-
-
+/* logo i navbar */
 .nav-logo {
   float: left;
   width: 8%;
@@ -63,11 +47,10 @@ main {
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* style af links inde i navigationsmenu*/
 .topnav a {
   float: none;
   display: inline-block;
-  /* Ændret til inline-block for at kunne tilføje margin */
   color: #111552;
   text-align: center;
   padding: 10px 10px;
@@ -76,19 +59,19 @@ main {
   margin: 0 5%;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+/* skjuler linket for topnavigation på små skærme*/
 .topnav .icon {
   display: none;
 }
 
-/* Dropdown container - needed to position the dropdown content */
+/* dropdown menu, sætter position for dropdown*/
 .dropdown {
   float: left;
   overflow: hidden;
   margin: 0 5%;
 }
 
-/* Style the dropdown button to fit inside the topnav */
+/* style dropdown så den kan være i topnav*/
 .dropdown .dropbtn {
   font-size: 17px;
   border: none;
@@ -101,7 +84,6 @@ main {
 
 }
 
-/* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -111,7 +93,7 @@ main {
   z-index: 1;
 }
 
-/* Style the links inside the dropdown */
+/* style links i dropdown*/
 .dropdown-content a {
   float: none;
   color: #111552;
@@ -121,7 +103,7 @@ main {
   text-align: left;
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
+/* giver baggrundsfarve på dropdown når man hover */
 .topnav a:hover,
 .dropdown:hover .dropbtn {
   background-color: #6189A0;
@@ -130,18 +112,18 @@ main {
   transition: 0.4s;
 }
 
-/* Add a grey background to dropdown links on hover */
+/* giver en grå farve på hover */
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+/* viser dropdown når man tager musen over "om os" */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/*Når skærmen er mindre end 600 pixels bred, skjul alle links undtagen det første. Vis linket, der skal åbne og lukke topnavigationen (.icon). */
 @media screen and (max-width: 600px) {
 
   .topnav a:not(:first-child),
@@ -155,7 +137,7 @@ main {
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* "Responsive" klassen tilføjes til topnavigationen med JavaScript, når brugeren klikker på ikonet. Denne klasse får topnavigationen til at se godt ud på små skærme (viser links lodret i stedet for vandret). */
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
@@ -188,16 +170,15 @@ main {
   }
 }
 
+  /* Skjul logoet når burgerbaren er åben */
 .topnav.responsive .nav-logo {
   display: none;
-  /* Skjul logoet når burgerbaren er åben */
 }
 
 @media screen and (min-width: 600px) {
   .topnav {
     overflow: hidden;
     display: flex;
-    /* Brug Flexbox til layout */
     align-items: center;
     padding-left: 70px;
     padding-right: 70px;
@@ -211,12 +192,13 @@ main {
   }
 }
 
+/* bliver brugt som en overodnet class for at sætte produkt bokse ved siden af hinanden og med pixels imellem dem */
 .whole {
   display: flex;
   justify-content: space-between;
   padding: 40px;
 }
-
+/* brugt til at ændre udseende og størrelse på produkt kortet */
 .product-card {
   width: 400px;
   background-color: antiquewhite;
@@ -226,22 +208,23 @@ main {
   color: #111552;
 }
 
+/* Er til for at sætte størrelsen på billedet inde i product-card */
 .product-img {
   width: 100%;
   object-fit: cover;
   margin-bottom: 10px;
 }
-
+/* giver den en hover effekt så den bliver forstørret når man tager musen over */
 .product-card:hover {
   transform: scale(1.02);
   transition: 0.4s;
 }
-
+/* giver forstørringseffekt til billede når man hover */
 .product-img:hover {
   transform: scale(1.05);
   transition: 0.4s;
 }
-
+/* instillinger for produkt knappen */
 .produkt-knap {
   background-color: #111552;
   color: #fdfef6;
@@ -250,14 +233,15 @@ main {
   border-radius: 20px;
   width: 350px;
   font-size: large;
+  box-shadow: 0px 2px 5px 0px rgb(26, 25, 25);
 }
-
+/* Giver en forstørrelses effekt når man hover over "bestil" */
 .produkt-knap:hover {
   background-color: #1a3850;
   transform: scale(1.05);
   transition: 0.4s;
 }
-
+/* Gør det mindre og sætter produkter i en kollonne når skærmen er mindre en 600px */
 @media screen and (max-width: 600px) {
   .whole {
     display: flex;
@@ -266,6 +250,7 @@ main {
   }
 }
 
+/* gør prouktkort mindre når størrelsen komme under 820px */
 @media screen and (max-width: 820px) {
 
   .product-card,
@@ -275,18 +260,14 @@ main {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .background-video {
-    border-radius: 10px;
-  }
-}
-
+/* overordnet section til artikel kort som er på forsiden */
 .artikel-whole {
   display: flex;
   justify-content: space-between;
   padding: 100px;
 }
 
+/* instilling for udseende på artikel kort */
 .artikel-kort {
   width: 300px;
   background-color: antiquewhite;
@@ -295,17 +276,20 @@ main {
   color: #000000;
 }
 
+/* Giver effekt til artikel kort når man hover */
 .artikel-kort:hover {
   transform: scale(1.05);
   transition: 0.4s;
 }
 
+/* Instilling for foto inde i artikel kort. Gør de passer ind i kortene */
 .artikel-img {
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
   margin-bottom: 10px;
 }
+/* Kode til at indstille udseende for links i artikel kortene */
 .artikel-knap {
   background-color: #111552;
   color: #fdfef6;
@@ -314,12 +298,15 @@ main {
   border-radius: 20px;
   width: 300px;
   font-size: medium;
+  box-shadow: 0px 2px 5px 0px rgb(26, 25, 25);
 }
+/* giver artikel kortene en effekt når man kører musen over */
 .artikel-knap:hover {
   background-color: #1a3850;
   transform: scale(1.05);
   transition: 0.4s;
 }
+/* centrering, teksfarve på footer tekst */
 .footer {
   color: #000000;
   text-align: center;
@@ -329,6 +316,8 @@ main {
   width: 100%;
   margin-left: -5px;
 }
+
+/* gør at artikle kommer i en kollonne når skærmstørrelsen er under 600px */
 @media screen and (max-width: 600px) {
   .artikel-whole {
     display: flex;
@@ -337,6 +326,8 @@ main {
     align-items: center;
   }
 }
+
+/* gør at størrelse på artikel kort, knap og tekst ændrer størrelse */
 @media screen and (max-width: 600px) {
 
   .artikel-kort,
@@ -345,23 +336,28 @@ main {
     font-size: 12px;
   }
 }
+
+/* Gør at billederne på artikel kort ikke bliver vist når skærmstørrelsen er under 600px */
 @media screen and (max-width: 600px) {
   .artikel-img {
     display: none;
   }
 }
+
+/* Overordnet section så billede og tekst bliver sat ved siden af hinanden. F.eks. på siden "hvorfor.html" */
 .over-image-text {
   display: flex;
   align-items: center;
   color: #111552;
 }
-
+/* Indstilling for størrelse af billedet, runde hjørner og box shadow omkring billedet */
 #billede-forside {
   width: 50%;
   margin: 5%;
   border-radius: 50px 50px 50px 50px;
   box-shadow: 0px 2px 5px 0px rgb(26, 25, 25);
 }
+/* Indstilling for opsætning af tekst og hvordan det ser ud ved siden af billederne. F.eks. på siden "hvorfor" */
 .tekst-forside {
   display: flex;
   justify-content: flex-end;
@@ -371,27 +367,32 @@ main {
   line-height: 1.5;
   padding: 7%;
 }
+/* Indstilling på udseende af knappen som siger "læs mere" på f.eks."hvorfor" */
 #knap-tekst {
   color: #ddd;
   text-decoration: none;
   padding: 14px 16px;
-  background-color: #201313;
+  background-color: #111552;
   max-width: 150px;
   text-align: center;
   border-radius: 20px;
   box-shadow: 0px 2px 5px 0px rgb(26, 25, 25);
 }
+/* Hvordan "læs mere" knappen se ud når man kører musen over */
 #knap-tekst:hover {
-  background-color: #ced5d4;
+  background-color: #1a3850;
+  transform: scale(1.05);
   transition: 0.4s;
-  color: black;
 }
-.hvorfor-video {
+/* Indstilling for størrelse, placering og udseende på video på siderne, "fremstilling" og "hvorfor" */
+.side-video {
   width: 50%;
   margin: 5%;
   border-radius: 50px 50px 50px 50px;
   box-shadow: 0px 2px 5px 0px rgb(26, 25, 25);
 }
+
+/* Ændrer på tekst, video og positon når skærmstørrelsen bliver mindre end 600px */
 @media screen and (max-width: 600px) {
 
   .whole-artikel, 
